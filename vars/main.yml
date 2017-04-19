@@ -1,0 +1,3 @@
+---
+# vars file for zabbix-agent-centos
+zabbix_agent_nonroot: "{{ (ansible_env.HOME == '/root') | ternary('no', 'yes') }}"
